@@ -43,8 +43,8 @@ export default {
       }
     },
     chimg() {
-      $.getJSON('http://api.tiqav.com/search/random.json?callback=?', {}, (json) => {
-        this.src = json[0].source_url;
+      $.getJSON('http://api.giphy.com/v1/gifs/random?api_key=dc6zaTOxFJmzC&tag=american+psycho', {}, (json) => {
+        this.src = json.data.image_url;
       });
       // $.getJSON('https://pixabay.com/api/?key=4523178-235f1f61f555b591793af96e8&q=waikiki&image_type=photo', {}, (json) => {
       //  this.src = json.hits[0].webformatURL;

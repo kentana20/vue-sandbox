@@ -4,7 +4,7 @@
       <csearch></csearch>
       <!-- result -->
       <box
-        v-for="hotel in hotels"
+        v-for="hotel in chotels"
         :hotel="hotel">
       </box>
     </div>
@@ -18,7 +18,7 @@ import Box from './Box';
 
 export default {
   computed: {
-    ...mapGetters(['hotels']),
+    ...mapGetters(['chotels']),
   },
   components: {
     Csearch,

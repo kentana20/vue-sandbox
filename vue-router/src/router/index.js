@@ -2,14 +2,15 @@ import Vue from 'vue';
 import Router from 'vue-router';
 import Top from '../components/Top';
 import Keyword from '../components/Keyword';
-import Search from '../components/Search';
+import Condition from '../components/Condition';
 
 Vue.use(Router);
+Vue.filter('moneyDelimiter', (value) => { value.toLocaleString(); });
 
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/top',
       name: 'Top',
       component: Top,
     },
@@ -19,9 +20,9 @@ export default new Router({
       component: Keyword,
     },
     {
-      path: '/search',
-      name: 'search',
-      component: Search,
+      path: '/condition',
+      name: 'condition',
+      component: Condition,
     },
   ],
 });

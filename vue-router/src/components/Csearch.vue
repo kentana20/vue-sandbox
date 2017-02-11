@@ -1,8 +1,9 @@
 <template>
   <div class="input-group">
-    <input @change="CHANGE_KEYWORD($event.target.value)" type="text" class="form-control" placeholder="検索ワード">
+    <input @change="CHANGE_KEYWORD($event.target.value)" type="text" class="form-control" placeholder="チェックイン日">
+    <!-- <input @change="CHANGE_COUT($event.target.value)" type="text" class="form-control" placeholder="チェックアウト日"> -->
     <span class="input-group-btn">
-      <button @click="SEARCH" class="btn btn-default" type="button">検索</button>
+      <button @click="CSEARCH" class="btn btn-default" type="button">検索</button>
     </span>
   </div><!-- /input-group -->
 </template>

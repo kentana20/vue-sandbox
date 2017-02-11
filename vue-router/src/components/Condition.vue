@@ -1,7 +1,7 @@
 <template>
   <div class="container center-block">
     <div class="row">
-      <search></search>
+      <csearch></csearch>
       <!-- result -->
       <box
         v-for="hotel in hotels"
@@ -13,7 +13,7 @@
 
 <script>
 import { mapGetters } from 'vuex';
-import Search from './Search';
+import Csearch from './Csearch';
 import Box from './Box';
 
 export default {
@@ -21,7 +21,7 @@ export default {
     ...mapGetters(['hotels']),
   },
   components: {
-    Search,
+    Csearch,
     Box,
   },
 };

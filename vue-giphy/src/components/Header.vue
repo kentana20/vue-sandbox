@@ -2,8 +2,7 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <i class="material-icons">dehaze</i>
-        <span class="mdl-layout-title">vue-giphy</span>
+        <span class="mdl-layout-title">vue-giphy - GiphyからGifアニメを取ってくるアプリ -</span>
       </div>
     </header>
   </div>
